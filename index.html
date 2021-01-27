@@ -30,36 +30,48 @@
 			<div class="card">
 				<div class="card-top">
 					<div class="range-section">
-						<h5>PAGEVIEWS</h5>
-						<span class="per-month">
+						<span class="view-div">
+							<h5 id="page-views"><h5>PAGEVIEWS</h5></h5>
+						</span>
+						<span class="per-month-top">
 							<h1>$</h1>
 							<h1 id="price"></h1>
 							<h1>.00</h1>
-							<p>/month</p>
+							<p id="month-year-text"></p>
 						</span>
 					</div>
 					<input
 						type="range"
-						min="8"
+						min="0"
 						max="36"
 						value="16"
+						step="4"
 						class="slider"
 						id="myRange"
 					/>
 				</div>
 
+				<span class="per-month-bottom">
+					<h1>$</h1>
+					<h1 id="price-two"></h1>
+					<h1>.00</h1>
+					<p id="year-month-text"></p>
+				</span>
+
 				<div class="monthly-yearly">
 					<span>Monthly Billing</span>
 					<label class="switch">
-						<input type="checkbox" checked />
+						<input id="toggle-switch" type="checkbox" />
 						<span class="toggle round"></span>
 					</label>
 					<span class="yearly-div">
 						<span>Yearly Billing</span>
 						<span id="discount">25% discount</span>
+						<span id="discount-mobile">-25%</span>
 					</span>
 				</div>
 				<hr />
+
 				<div class="card-footer">
 					<div class="feature-list">
 						<span class="feature">
@@ -70,6 +82,7 @@
 							/>
 							<p>Unlimited websites</p>
 						</span>
+
 						<span class="feature">
 							<img
 								class="checkmark"
@@ -78,6 +91,7 @@
 							/>
 							<p>100% data ownership</p>
 						</span>
+
 						<span class="feature">
 							<img
 								class="checkmark"
